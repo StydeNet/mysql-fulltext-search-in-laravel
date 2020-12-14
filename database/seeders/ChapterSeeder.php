@@ -4,7 +4,6 @@ namespace Database\Seeders;
 
 use App\Models\Chapter;
 use Illuminate\Database\Seeder;
-use Illuminate\Support\Facades\Storage;
 
 class ChapterSeeder extends Seeder
 {
@@ -16,35 +15,33 @@ class ChapterSeeder extends Seeder
     public function run()
     {
         Chapter::factory()->create([
-            'title' => 'Instalación de Laravel',
-            'content' => Storage::get('docs/installation.md'),
+            'title' => 'Primeros pasos con bases de datos',
+            'content' => 'El manejo de bases de datos se hace utilizando Eloquent, el constructor de consultas, o SQL puro',
         ]);
 
         Chapter::factory()->create([
-            'title' => 'Configuración de Laravel',
-            'content' => Storage::get('docs/configuration.md'),
+            'title' => 'Pruebas',
+            'content' => 'Laravel es construido pensando en las pruebas.',
         ]);
 
         Chapter::factory()->create([
-            'title' => 'Estructura de directorios de un proyecto en Laravel',
-            'content' => Storage::get('docs/structure.md'),
+            'title' => 'Eloquent',
+            'content' => 'Es una interaz active record incluida con Laravel donde un modelo es definido para acceder a una tabla.',
         ]);
 
         Chapter::factory()->create([
-            'title' => 'Laravel Valet',
-            'content' => Storage::get('docs/valet.md'),
+            'title' => 'Relationships',
+            'content' => 'Eloquent permite que podamos accesar la información de los vínculos entre las tablas.',
         ]);
 
         Chapter::factory()->create([
-            'title' => 'Ciclo de vida de una solicitud http',
-            'content' => Storage::get('docs/lifecycle.md'),
+            'title' => 'Http tests',
+            'content' => 'Laravel proporciona toda una API que permite hacer solicitudes a tu aplicación e inspeccionar la salida.',
         ]);
 
         Chapter::factory()->create([
-            'title' => 'El contenedor de servicios',
-            'content' => Storage::get('docs/container.md'),
+            'title' => 'El constructor de consultas',
+            'content' => 'Interface para crear y ejecutar consultas por medio de métodos poderosos que sustituyen los comandos SQL',
         ]);
-
-        Chapter::factory(10)->create();
     }
 }
