@@ -44,5 +44,7 @@ class ChapterSeeder extends Seeder
             'title' => 'El contenedor de servicios',
             'content' => Storage::get('docs/container.md'),
         ]);
+
+        Chapter::factory(10)->create();
     }
 }
