@@ -1,5 +1,6 @@
 <?php
 
+use App\Models\Chapter;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,5 +15,17 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return Chapter::query()
+        ->when(request('search'), function ($query, $search) {
+            $query->select('id', 'title', 'content')
+                ->selectRaw(
+                    'match(title,content) against(? in natural language mode) as score',
+                    [$search]
+                )
+                ->whereRaw(
+                    'match(title,content) against(? in natural language mode) > 0.0000001',
+                    [$search]
+                );
+        })
+        ->get();
 });

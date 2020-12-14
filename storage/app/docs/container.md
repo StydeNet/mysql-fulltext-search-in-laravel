@@ -1,0 +1,1 @@
+El contenedor de servicios de Laravel es una herramienta poderosa para administrar dependencias de clases y realizar inyección de dependencias. La inyección de dependencias es una frase bonita para básicamente decir: las dependencias de clases son "inyectadas" en la clase mediante el constructor o, en algunos casos, métodos "setter".

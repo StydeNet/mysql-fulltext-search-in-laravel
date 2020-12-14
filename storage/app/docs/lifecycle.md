@@ -1,0 +1,1 @@
+El punto de entrada para todas las solicitudes a una aplicación de Laravel es el archivo `public/index.php`. Todas las solicitudes son dirigidas a este archivo por la configuración de tu servidor web (Apache/Nginx). El archivo `index.php` no contiene mucho código. En su lugar, es un punto de partida para cargar el resto del framework.

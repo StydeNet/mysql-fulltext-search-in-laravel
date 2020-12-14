@@ -1,0 +1,3 @@
+A menudo es útil tener diferentes valores de configuración basados en el entorno en el que se ejecuta la aplicación. Por ejemplo, es posible que desees utilizar un servidor de caché localmente diferente al servidor que usas en producción.
+
+Para hacer esto sencillo, Laravel utiliza la librería de PHP [DotEnv](https://github.com/vlucas/phpdotenv) por Vance Lucas. En una nueva instalación de Laravel, el directorio raíz de tu aplicación contendrá un archivo `.env.example`. Si instalas Laravel por medio de Composer, este archivo será renombrado automáticamente a `.env`. De lo contrario, deberás renombrar el archivo manualmente.

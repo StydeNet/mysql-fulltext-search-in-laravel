@@ -1,0 +1,1 @@
+La estructura por defecto de aplicación de Laravel está pensada para proporcionar un buen punto de  inicio tanto para grandes y pequeñas aplicaciones. Pero, eres libre de organizar tu aplicación como quieras. Laravel no impone casi ninguna restricción sobre donde una clase es ubicada - siempre y cuando Composer pueda cargar automáticamente la clase.

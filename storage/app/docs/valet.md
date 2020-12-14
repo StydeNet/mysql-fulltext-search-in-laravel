@@ -1,0 +1,1 @@
+Valet es un entorno de desarrollo de Laravel para Mac. No requiere de Vagrant ni de modificar el archivo de  configuración `/etc/hosts`. Incluso permite compartir tus sitios a través de túneles locales. _Genial ¿Verdad?_
