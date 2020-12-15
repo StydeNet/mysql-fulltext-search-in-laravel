@@ -16,8 +16,10 @@ class CreateChaptersTable extends Migration
     {
         Schema::create('chapters', function (Blueprint $table) {
             $table->id();
-            $table->string('title');
-            $table->longText('content');
+
+            $table->string('title')->collation('utf8mb4_bin');
+            $table->longText('content')->collation('utf8mb4_bin');
+
             $table->string('translator');
             $table->timestamps();
         });
